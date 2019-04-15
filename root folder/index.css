@@ -1,0 +1,305 @@
+<head>
+<link rel="styl" type="text/css" href="index.css">
+</head>
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+body {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+p.italic {
+  font-style: italic;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #AFEEEE;
+  color: white;
+}
+body {
+  background-image: url("https://www.theflightdeal.com/wp-content/uploads/2014/09/honolulu_september-550x309.jpg");
+  background-size: 1975px 1200px
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+<script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            .img1 { background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5ds7Ua4Vb-p8WcY_8PTqWeRydaf4ZIFXMpJAScH6ayF7sv8N_"); }
+            .img2 { background-image: url("https://www.google.com/imgres?imgurl=http%3A%2F%2Fwww.hawaiianairlines.com%2F%2Fimg.s-hawaiianairlines.com%2Fstatic%2Fimages%2Fhawaiistories%2Fadventure%2Fdiamondhead%2Fhero-diamond-head-lookout.jpg%3Fversion%3D02f0%26sc_lang%3Den&imgrefurl=https%3A%2F%2Fwww.hawaiianairlines.com%2Fhawaii-stories%2Fadventure%2Fdiamond-head-hike&docid=NXor1IYP_KllCM&tbnid=nigBg0dK9w8u7M%3A&vet=10ahUKEwi73syYoKXhAhXrz4MKHYS5BEsQMwhzKAswCw..i&w=1290&h=600&safe=strict&bih=865&biw=1359&q=diamond%20head&ved=0ahUKEwi73syYoKXhAhXrz4MKHYS5BEsQMwhzKAswCw&iact=mrc&uact=8"); }
+            .img3 { background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.smartertravel.com%2Fuploads%2F2018%2F03%2Fshutterstock_519559273-1400x500.jpg&imgrefurl=https%3A%2F%2Fwww.smartertravel.com%2Fdestinations%2Fvisit-honolulu-travel-guide%2F&docid=e262uujzkXW1UM&tbnid=BssHOftMtLZPCM%3A&vet=10ahUKEwjllbneoaXhAhXM64MKHXBuDh4QMwhsKAMwAw..i&w=1400&h=500&safe=strict&bih=865&biw=1359&q=honolulu&ved=0ahUKEwjllbneoaXhAhXM64MKHXBuDh4QMwhsKAMwAw&iact=mrc&uact=8"); }
+            .img4 { background-image: url("https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj-y_uJoqXhAhUB0YMKHcKKBK0QjRx6BAgBEAU&url=https%3A%2F%2Fwww.marriott.com%2Fhotel-search%2Fhonolulu.hotels.hawaii.united-states.travel%2F&psig=AOvVaw19oFKUBZyzj4qOu14cufaM&ust=1553877185419602"); }
+            .img5 { background-image: url("https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjAyZ-WoqXhAhUUmoMKHcdMDUwQjRx6BAgBEAU&url=https%3A%2F%2Fwww.hotels.com%2Fde1431094%2Fhotels-honolulu-hawaii%2F&psig=AOvVaw19oFKUBZyzj4qOu14cufaM&ust=1553877185419602"); }
+            .img6 { background-image: url("https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwigtsiqoqXhAhWm6IMKHW8oB7UQjRx6BAgBEAU&url=https%3A%2F%2Fwww.theflightdeal.com%2F2017%2F12%2F25%2Famerican-590-baltimore-honolulu-hawaii-and-vice-versa-roundtrip-including-all-taxes%2F&psig=AOvVaw19oFKUBZyzj4qOu14cufaM&ust=1553877185419602"); }
